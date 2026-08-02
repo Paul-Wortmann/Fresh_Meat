@@ -1,0 +1,316 @@
+<ui>
+   <!-- Global color theme used for the entire UI -->
+   <color>
+      <color_text>1.0,1.0,1.0,1.0</color_text>
+      <color_background>1.0,1.0,1.0,0.975</color_background>
+      <color_illuminated>1.0,1.0,1.0,1.0</color_illuminated>
+      <color_hovered>0.8,0.8,0.2,1.0</color_hovered>
+      <color_pressed>0.9,0.4,0.2,1.0</color_pressed>
+      <color_clicked>0.2,1.0,0.2,1.0</color_clicked>
+      <color_default>0.6,0.6,0.6,1.0</color_default>
+   </color>
+
+   <!-- Global audio used for the entire UI -->
+   <audio>
+      <audio_hovered>hover_001.ogg</color_audio>
+      <audio_clicked>click_001.ogg</color_audio>
+   </audio>
+
+   <!-- ========== MAIN MENU ========== -->
+   <form>
+      <form_name>main_menu</form_name>
+      <form_enabled>1</form_enabled>
+      <form_centered>1</form_centered>
+      <form_dimensions>200,400</form_dimensions>
+      <form_position>960,100,0</form_position>
+      <form_texture_base>form_001.png</form_texture_base>
+      <element>
+         <element_type>6</element_type>
+         <element_enabled>0</element_enabled>
+         <element_dimensions>200,24</element_dimensions>   <!-- width should match form width -->
+         <element_position>0,0,0</element_position>
+         <element_texture_base>titlebar_bg.png</element_texture_base>
+         <element_text>   Main Menu   </element_text>
+      </element>
+      <!-- Buttons: Play, Edit, Save, Load, Options, Credits, Quit -->
+      <!-- Button dimensions: 168x24, centered horizontally (16 offset) -->
+      <!-- Vertical spacing: 8px gap, start Y = 16 -->
+      <element>
+         <element_type>2</element_type>
+         <element_dimensions>168,24</element_dimensions>
+         <element_position>16,16,0</element_position>
+         <element_texture_base>button_n_001.png</element_texture_base>
+         <element_texture_ext>button_h_001.png</element_texture_ext>
+         <element_text>     Play      </element_text>
+      </element>
+      <element>
+         <element_type>2</element_type>
+         <element_dimensions>168,24</element_dimensions>
+         <element_position>16,48,0</element_position>
+         <element_texture_base>button_n_001.png</element_texture_base>
+         <element_texture_ext>button_h_001.png</element_texture_ext>
+         <element_text>     Edit      </element_text>
+      </element>
+      <element>
+         <element_type>2</element_type>
+         <element_dimensions>168,24</element_dimensions>
+         <element_position>16,80,0</element_position>
+         <element_texture_base>button_n_001.png</element_texture_base>
+         <element_texture_ext>button_h_001.png</element_texture_ext>
+         <element_text>     Save      </element_text>
+      </element>
+      <element>
+         <element_type>2</element_type>
+         <element_dimensions>168,24</element_dimensions>
+         <element_position>16,112,0</element_position>
+         <element_texture_base>button_n_001.png</element_texture_base>
+         <element_texture_ext>button_h_001.png</element_texture_ext>
+         <element_text>     Load      </element_text>
+      </element>
+      <element>
+         <element_type>2</element_type>
+         <element_dimensions>168,24</element_dimensions>
+         <element_position>16,144,0</element_position>
+         <element_texture_base>button_n_001.png</element_texture_base>
+         <element_texture_ext>button_h_001.png</element_texture_ext>
+         <element_text>   Options     </element_text>
+      </element>
+      <element>
+         <element_type>2</element_type>
+         <element_dimensions>168,24</element_dimensions>
+         <element_position>16,176,0</element_position>
+         <element_texture_base>button_n_001.png</element_texture_base>
+         <element_texture_ext>button_h_001.png</element_texture_ext>
+         <element_text>   Credits     </element_text>
+      </element>
+      <element>
+         <element_type>2</element_type>
+         <element_dimensions>168,24</element_dimensions>
+         <element_position>16,208,0</element_position>
+         <element_texture_base>button_n_001.png</element_texture_base>
+         <element_texture_ext>button_h_001.png</element_texture_ext>
+         <element_text>     Quit      </element_text>
+      </element>
+   </form>
+
+   <!-- ========== CREDITS ========== -->
+   <form>
+      <form_name>credits</form_name>
+      <form_enabled>0</form_enabled>
+      <form_centered>1</form_centered>
+      <form_dimensions>200,400</form_dimensions>
+      <form_position>960,100,0</form_position>
+      <form_texture_base>form_001.png</form_texture_base>
+
+      <!-- Text labels -->
+      <element>
+         <element_type>1</element_type>
+         <element_dimensions>168,24</element_dimensions>
+         <element_position>16,16,0</element_position>
+         <element_text> Code: Paul Wortmann </element_text>
+      </element>
+      <element>
+         <element_type>1</element_type>
+         <element_dimensions>168,24</element_dimensions>
+         <element_position>16,48,0</element_position>
+         <element_text> Art: OpenGameArt </element_text>
+      </element>
+      <element>
+         <element_type>1</element_type>
+         <element_dimensions>168,24</element_dimensions>
+         <element_position>16,80,0</element_position>
+         <element_text> Audio: OpenGameArt </element_text>
+      </element>
+
+      <!-- Back button -->
+      <element>
+         <element_type>2</element_type>
+         <element_dimensions>168,24</element_dimensions>
+         <element_position>16,156,0</element_position> <!-- centered: (300-168)/2 = 66 -->
+         <element_texture_base>button_n_001.png</element_texture_base>
+         <element_texture_ext>button_h_001.png</element_texture_ext>
+         <element_text>      Back      </element_text>
+      </element>
+   </form>
+
+   <!-- ========== OPTIONS MENU ========== -->
+   <form>
+      <form_name>options_menu</form_name>
+      <form_enabled>0</form_enabled>
+      <form_centered>1</form_centered>
+      <form_dimensions>400,350</form_dimensions>
+      <form_position>960,100,0</form_position>
+      <form_texture_base>form_001.png</form_texture_base>
+
+      <!-- Graphics label -->
+      <element>
+         <element_type>1</element_type>
+         <element_dimensions>100,24</element_dimensions>
+         <element_position>20,16,0</element_position>
+         <element_text>  Graphics  </element_text>
+      </element>
+
+      <!-- Full-screen toggle button -->
+      <element>
+         <element_type>2</element_type>
+         <element_dimensions>168,24</element_dimensions>
+         <element_position>200,16,0</element_position>
+         <element_texture_base>button_n_001.png</element_texture_base>
+         <element_texture_ext>button_h_001.png</element_texture_ext>
+         <element_text>  Full-screen  </element_text>
+      </element>
+
+      <!-- Resolution dropdown label -->
+      <element>
+         <element_type>1</element_type>
+         <element_dimensions>100,24</element_dimensions>
+         <element_position>20,48,0</element_position>
+         <element_text>Resolution</element_text>
+      </element>
+
+      <!-- Resolution dropdown -->
+      <element>
+         <element_type>5</element_type>
+         <element_dimensions>168,24</element_dimensions>
+         <element_position>200,48,0</element_position>
+         <element_texture_base>dropbox_bg_001.png</element_texture_base>
+         <dropdown_option>1920x1080</dropdown_option>
+         <dropdown_option>800x600</dropdown_option>
+         <element_value>0</element_value> <!-- default 1920x1080 -->
+      </element>
+
+      <!-- Audio label -->
+      <element>
+         <element_type>1</element_type>
+         <element_dimensions>100,24</element_dimensions>
+         <element_position>20,96,0</element_position>
+         <element_text>   Audio   </element_text>
+      </element>
+
+      <!-- Master volume label + slider -->
+      <element>
+         <element_type>1</element_type>
+         <element_dimensions>80,24</element_dimensions>
+         <element_position>20,128,0</element_position>
+         <element_text>  Master  </element_text>
+      </element>
+      <element>
+         <element_type>3</element_type>
+         <element_dimensions>200,24</element_dimensions>
+         <element_dimensions_ext>20,20</element_dimensions_ext>
+         <element_position>120,128,0</element_position>
+         <element_texture_base>slider_bg_001.png</element_texture_base>
+         <element_texture_ext>slider_knob_001.png</element_texture_ext>
+         <element_value>75</element_value>
+      </element>
+
+      <!-- Music volume label + slider -->
+      <element>
+         <element_type>1</element_type>
+         <element_dimensions>80,24</element_dimensions>
+         <element_position>20,160,0</element_position>
+         <element_text>  Music  </element_text>
+      </element>
+      <element>
+         <element_type>3</element_type>
+         <element_dimensions>200,24</element_dimensions>
+         <element_dimensions_ext>20,20</element_dimensions_ext>
+         <element_position>120,160,0</element_position>
+         <element_texture_base>slider_bg_001.png</element_texture_base>
+         <element_texture_ext>slider_knob_001.png</element_texture_ext>
+         <element_value>50</element_value>
+      </element>
+
+      <!-- Sound volume label + slider -->
+      <element>
+         <element_type>1</element_type>
+         <element_dimensions>80,24</element_dimensions>
+         <element_position>20,192,0</element_position>
+         <element_text>  Sound  </element_text>
+      </element>
+      <element>
+         <element_type>3</element_type>
+         <element_dimensions>200,24</element_dimensions>
+         <element_dimensions_ext>20,20</element_dimensions_ext>
+         <element_position>120,192,0</element_position>
+         <element_texture_base>slider_bg_001.png</element_texture_base>
+         <element_texture_ext>slider_knob_001.png</element_texture_ext>
+         <element_value>50</element_value>
+      </element>
+
+      <!-- Back button -->
+      <element>
+         <element_type>2</element_type>
+         <element_dimensions>168,24</element_dimensions>
+         <element_position>116,306,0</element_position> <!-- 400-24-16-16? Y: 350-24-16=310, fine -->
+         <element_texture_base>button_n_001.png</element_texture_base>
+         <element_texture_ext>button_h_001.png</element_texture_ext>
+         <element_text>      Back      </element_text>
+      </element>
+   </form>
+
+   <!-- ============ EDIT =========== -->
+   <form>
+      <form_name>test form</form_name>
+      <form_enabled>0</form_enabled>
+      <form_dimensions>200,600</form_dimensions>
+      <form_position>0,0,0</form_position>
+      <form_texture_base>form_001.png</form_texture_base>
+
+      <element>
+         <element_type>1</element_type>
+         <element_dimensions>88,24</element_dimensions>
+         <element_position>44,16,0</element_position>
+         <element_text> Biome </element_text>
+      </element>
+      <element>
+          <element_type>5</element_type>
+          <element_dimensions>168,24</element_dimensions>
+          <element_position>16,40,0</element_position>
+          <element_texture_base>dropbox_bg_001.png</element_texture_base>
+          <dropdown_option> Temperate          </dropdown_option>
+          <dropdown_option> Desert             </dropdown_option>
+          <dropdown_option> Dungeon 1          </dropdown_option>
+          <dropdown_option> Dungeon 2          </dropdown_option>
+          <element_value>1</element_value>
+      </element>
+
+      <element>
+         <element_type>1</element_type>
+         <element_dimensions>88,24</element_dimensions>
+         <element_position>44,64,0</element_position>
+         <element_text>  Tile  </element_text>
+      </element>
+      <element>
+          <element_type>5</element_type>
+          <element_dimensions>168,24</element_dimensions>
+          <element_position>16,88,0</element_position>
+          <element_texture_base>dropbox_bg_001.png</element_texture_base>
+          <dropdown_option> Void               </dropdown_option>
+          <dropdown_option> Floor              </dropdown_option>
+          <dropdown_option> Wall               </dropdown_option>
+          <dropdown_option> Path               </dropdown_option>
+          <element_value>1</element_value>
+      </element>
+
+      <element>
+         <element_type>3</element_type>
+         <element_dimensions>168,24</element_dimensions>
+         <element_dimensions_ext>20,20</element_dimensions_ext> // slider knob
+         <element_position>16,130,0</element_position>
+         <element_texture_base>slider_bg_001.png</element_texture_base>
+         <element_texture_ext>slider_knob_001.png</element_texture_ext>
+         <element_value>50</element_value> // used for slider / progress bar
+      </element>
+      <element>
+          <element_type>4</element_type> // 4 = progressBar
+          <element_dimensions>168,24</element_dimensions>
+          <element_position>16,160,0</element_position>
+          <element_texture_base>bar_bg_001.png</element_texture_base> // Background track
+          <element_texture_ext>bar_fill_001.png</element_texture_ext> // Fill texture
+          <element_value>75</element_value> // 0 to 100
+      </element>
+
+   </form>
+</ui>
+

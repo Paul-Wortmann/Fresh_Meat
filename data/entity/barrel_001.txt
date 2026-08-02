@@ -1,0 +1,33 @@
+<entity>
+   <base>
+      <entity_name>barrel_001</entity_name>
+      <entity_type>4</entity_type>   <!-- objectDynamic -->
+   </base>
+   <graphics>
+      <graphics_model>barrel_001.obj</graphics_model>
+      <graphics_scale>0.5,0.5,0.5</graphics_scale>
+      <material>
+         <texture_diffuse>barrel_001_d.png</texture_diffuse>
+         <texture_normal>barrel_001_n.png</texture_normal>
+         <texture_specular>barrel_001_s.png</texture_specular>
+      </material>
+   </graphics>
+   <physics>
+      <physics_shape>circle</physics_shape>
+      <physics_radius>0.5</physics_radius>
+      <physics_body_type>dynamic</physics_body_type>
+      <physics_mass>5.0</physics_mass>
+      <physics_restitution>0.6</physics_restitution>
+      <physics_friction>0.4</physics_friction>
+      <physics_angle>0.0</physics_angle>
+      <physics_angular_velocity>0.0</physics_angular_velocity>
+      <physics_direction>0.0,0.0,0.0</physics_direction>
+      <physics_position>10.0,0.0,10.0</physics_position>
+      <physics_velocity>0.0,0.0,0.0</physics_velocity>
+      <physics_acceleration>0.0,0.0,0.0</physics_acceleration>
+      <physics_deceleration>5.0,0.0,5.0</physics_deceleration>
+      <physics_max_velocity>5.0,0.0,5.0</physics_max_velocity>
+      <physics_max_acceleration>2.0, 0.0, 2.0</physics_max_acceleration>
+      <physics_max_deceleration>25.0, 0.0, 25.0</physics_max_deceleration>
+   </physics>
+</entity>
