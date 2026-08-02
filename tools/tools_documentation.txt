@@ -1,4 +1,85 @@
-entity_validator:
-run in the root folder of the application
-validates all entities under the ./data folder
+# Fresh Tools Documentation
 
+This document describes command-line tools used to validate and maintain project data.
+
+## entity_validator
+
+Validates entity definition files stored under the `./data` directory.
+
+### Purpose
+
+The entity validator checks entity data against the schema documented in:
+
+`documentation/entity_schema.md`
+
+It is intended to catch malformed or inconsistent entity definitions before they are consumed by the engine or added to the dataset.
+
+### Running
+
+Run the validator from the root directory of the application:
+
+```text
+entity_validator
+```
+
+The validator scans entity definitions under:
+
+```text
+./data/entity/
+```
+
+### Validation checks
+
+The validator should report errors for invalid entity data, including:
+
+- Missing required `<entity>` or `<base>` sections
+- Missing `entity_name`
+- Missing `entity_type`
+- Duplicate entity names
+- Invalid entity type values
+- Invalid numeric values
+- Invalid vector values or incorrect vector component counts
+- Invalid physics body types
+- Invalid physics shapes
+- Dynamic bodies with invalid or missing mass
+- Negative friction values
+- Invalid restitution values
+- Missing shape-specific physics fields
+- Invalid or missing referenced assets when asset validation is available
+- Invalid animation indices when model metadata is available
+- Unknown fields or sections, according to validator strictness
+
+### Output
+
+Validation output should identify the affected file and, where possible, the specific field or section that caused the problem.
+
+A successful validation run should report that all discovered entity definitions passed validation.
+
+A failed validation run should report each validation error and return a non-zero exit status.
+
+Warnings may be reported for suspicious but potentially valid data. Warnings do not necessarily cause validation to fail unless strict validation is enabled.
+
+### Exit status
+
+The validator is intended to use the following exit-status convention:
+
+| Exit status | Meaning |
+|---|---|
+| `0` | All entity definitions passed validation. |
+| Non-zero | One or more validation errors were detected, or the validator could not complete validation. |
+
+This makes the tool suitable for use as a build or CI validation step.
+
+### Scope
+
+The validator is read-only. It must not modify entity files or automatically rewrite data.
+
+Automatic normalization or repair may be added as a separate tool in the future. Validation and modification should remain separate operations so validation can be safely used in CI.
+
+### Schema reference
+
+The authoritative entity data schema is documented in:
+
+`documentation/entity_schema.md`
+
+Changes to the entity format should update the schema documentation and the validator together.
