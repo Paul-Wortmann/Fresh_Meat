@@ -1,0 +1,62 @@
+Title: Rigged, textured Executioner
+Author: thecubber (Submitted by bart)
+URL: https://opengameart.org/content/rigged-textured-executioner
+License: GPL 2.0, GPL 3.0, CC-BY 3.0, CC-BY-SA 3.0
+Copyright/Attribution Notice: Model by thecubber, commissioned by the OpenGameArt.org community (http://opengameart.org)
+
+Title: Dungeon Ambience
+Author: yd
+URL: https://opengameart.org/content/dungeon-ambience
+License: CC0 - http://creativecommons.org/publicdomain/zero/1.0/
+
+Title: Textures Collection
+Author: Cethiel
+URL: https://opengameart.org/content/textures-collection 
+License: CC0 - http://creativecommons.org/publicdomain/zero/1.0/
+
+Title: Brain and Skull
+Author: Drummyfish
+URL: https://opengameart.org/content/brain-and-skull
+License: CC0 - http://creativecommons.org/publicdomain/zero/1.0/
+
+Title: 3D dungeon debris - gibs
+Author: Paul Wortmann
+URL: https://opengameart.org/content/3d-dungeon-debris-gibs
+License: CC0 - http://creativecommons.org/publicdomain/zero/1.0/
+
+Title: 6th gen barrel
+Author: Starry Skydancer
+URL: https://opengameart.org/content/6th-gen-barrel 
+License: CC0 - http://creativecommons.org/publicdomain/zero/1.0/
+
+Title: Smoke Vapor Particles
+Author: Fupi
+URL: https://opengameart.org/content/smoke-vapor-particles 
+License: CC0 - http://creativecommons.org/publicdomain/zero/1.0/
+
+Title: Click UI Menu SFX (yes/no/select)
+Author: qubodup
+URL: https://opengameart.org/content/click-ui-menu-sfx-yesnoselect 
+License: CC0 - http://creativecommons.org/publicdomain/zero/1.0/
+
+Title: Interface beeps
+Author: bart
+URL: https://opengameart.org/content/interface-beeps
+License: CC0 - http://creativecommons.org/publicdomain/zero/1.0/
+
+Title: Buttons and Frame
+Author: buttons
+URL: https://opengameart.org/content/buttons-and-frame
+License: CC0 - http://creativecommons.org/publicdomain/zero/1.0/
+
+Title: Flare windows
+Author: Blarumyrran
+URL: https://opengameart.org/content/flare-windows
+License: CC0 - http://creativecommons.org/publicdomain/zero/1.0/
+
+Title: Fresh Meat
+Author: Paul Wortmann
+URL: https://opengameart.org/content/fresh-meat
+License: CC0 - http://creativecommons.org/publicdomain/zero/1.0/
+
+
