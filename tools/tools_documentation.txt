@@ -1,0 +1,4 @@
+entity_validator:
+run in the root folder of the application
+validates all entities under the ./data folder
+
