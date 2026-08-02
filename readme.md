@@ -2,7 +2,7 @@
 
 Copyright Paul Wortmann. GNU GPL v2
 
-![Fresh](https://raw.githubusercontent.com/Paul-Wortmann/Fresh/master/screenshots/fresh_meat_001.png)
+![Fresh](https://github.com/Paul-Wortmann/Fresh/blob/main/screenshots/fresh_meat_001.png)
 
 ## Requirements
 
