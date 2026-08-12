@@ -27,7 +27,8 @@ For topics not explicitly covered here, refer to these primary sources.
 ## 2. Language Standards
 
 - **C:** Target **C11** or newer.
-- **C++:** Target **ISO C++20** or newer. C++17, C++14, and C++11 are also acceptable if required by the target platform.
+- **C++:** Target **ISO C++20** or newer. C++17, C++14, and C++11 are also acceptable
+  if required by the target platform.
 - Avoid non‑standard compiler extensions unless absolutely required by a platform boundary.
 - Prefer standard, modern, and portable C++.
 
@@ -304,7 +305,3 @@ The following tools shall be used to enforce this style guide automatically:
 
 *This document is a living guideline and may be updated as the project evolves.*
 ```
-
----
-
-
