@@ -72,7 +72,8 @@ To minimise hidden dependencies, includes shall be ordered as follows (with a bl
 
   ```cpp
   #ifdef __cplusplus
-  extern "C" {
+  extern "C"
+  {
   #endif
 
   void c_api_function(int param);
