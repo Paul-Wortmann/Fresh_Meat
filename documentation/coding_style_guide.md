@@ -1,6 +1,4 @@
 
----
-
 ```markdown
 # C/C++ Coding Style Guide
 
@@ -10,7 +8,8 @@
 
 ## 1. Introduction
 
-This document defines the coding style and conventions for all C and C++ code within the project. The primary goals are to:
+This document defines the coding style and conventions for all C and C++ code within the project.
+The primary goals are to:
 
 - Promote **consistency** across the entire codebase.
 - Improve **readability** and **maintainability**.
@@ -19,7 +18,10 @@ This document defines the coding style and conventions for all C and C++ code wi
 
 > **Guiding Principle:** Code is read much more often than it is written. Optimize for the reader, not the writer.
 
-This guide is largely inspired by the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html), the [LLVM Coding Standards](https://llvm.org/docs/CodingStandards.html), and the [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines). For topics not explicitly covered here, refer to these primary sources.
+This guide is largely inspired by the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html),
+the [LLVM Coding Standards](https://llvm.org/docs/CodingStandards.html), and
+the [C++ Core Guidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines).
+For topics not explicitly covered here, refer to these primary sources.
 
 
 ## 2. Language Standards
@@ -96,7 +98,8 @@ Consistent naming is crucial for readability.
 | **Namespaces** | `lowercase` | `namespace myproject`, `namespace core` |
 | **Macros** | `UPPER_CASE_WITH_UNDERSCORES` | `#define MY_PROJECT_VERSION 1` |
 
-- **Important:** Never use names that begin with `__` (double underscore) or `_` (underscore followed by an uppercase letter) – these are reserved for the implementation.
+- **Important:** Never use names that begin with `__` (double underscore)
+- or `_` (underscore followed by an uppercase letter) – these are reserved for the implementation.
 
 **Pointer / reference placement:**  
 Place the `*` or `&` adjacent to the **type**, not the name:  
@@ -159,7 +162,9 @@ Place the `*` or `&` adjacent to the **type**, not the name:
 
 ### 5.6 Automatic Formatting
 
-All code **must** be formatted with `clang-format` before committing. A project‑specific `.clang-format` file shall be provided, with settings matching this guide (especially 4‑space indent, Allman braces, and pointer alignment).
+All code **must** be formatted with `clang-format` before committing. 
+A project‑specific `.clang-format` file shall be provided, 
+with settings matching this guide (especially 4‑space indent, Allman braces, and pointer alignment).
 
 
 ## 6. Comments
@@ -262,7 +267,8 @@ private:
 - Functions with no parameters in C shall be declared with `(void)`.
 - Keep functions small and focused on a single task.
 - Prefer standard algorithms (`std::ranges`, `std::algorithm`) over raw loops.
-- Use `auto` only when the type is obvious from the context (e.g., iterator declarations, `make_unique`). Avoid `auto` when it obscures the type for the reader.
+- Use `auto` only when the type is obvious from the context (e.g., iterator declarations, `make_unique`).
+- Avoid `auto` when it obscures the type for the reader.
 - Use `constexpr` for values that can be computed at compile time.
 - Prefer `std::optional`, `std::variant`, and `std::any` over raw unions or pointer‑based “maybe” patterns.
 
